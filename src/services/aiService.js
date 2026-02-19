@@ -3,7 +3,8 @@ import OpenAI from 'openai';
 
 // CONFIGURAÇÃO DA CHAVE (Substitua a string abaixo pela sua chave se necessário)
 const openai = new OpenAI({
-apiKey: import.meta.env.VITE_OPENAI_API_KEY, 
+apiKey: import.meta.env.VITE_OPENAI_API_KEY, // <-- Corrigido para OPENAI
+  dangerouslyAllowBrowser: true
 });
 
 export const analyzeEdital = async (pdfText, projectTitle) => {
