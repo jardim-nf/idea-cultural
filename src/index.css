@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* Definindo nossas cores personalizadas direto aqui */
+  --color-ideia-dark: #0f172a;
+  --color-ideia-primary: #1e3a8a;
+  --color-ideia-secondary: #10b981;
+  --color-ideia-light: #f8fafc;
+}
+
+/* Configuração global */
+body {
+  background-color: var(--color-ideia-light);
+  color: #1f2937;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
