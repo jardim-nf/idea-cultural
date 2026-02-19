@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD4-qJzX-gm728nMPs0MaIpvqADwVTHM6w",
-  authDomain: "ideia-cultural.firebaseapp.com",
-  projectId: "ideia-cultural",
-  storageBucket: "ideia-cultural.firebasestorage.app",
-  messagingSenderId: "1022231442869",
-  appId: "1:1022231442869:web:4fe970241f7166588155fc",
-  measurementId: "G-GV98X9MBTD"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Inicializa o Firebase
