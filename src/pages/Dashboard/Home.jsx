@@ -18,9 +18,6 @@ export default function Home() {
     localStorage.setItem('projectData', JSON.stringify({ analysis: project.analysis, title: project.title }));
     navigate('/project/analysis');
   };
-
-
-
   
   // Função para deletar
   const deleteProject = (id, e) => {
