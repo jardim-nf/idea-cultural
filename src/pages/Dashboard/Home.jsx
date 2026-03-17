@@ -19,6 +19,9 @@ export default function Home() {
     navigate('/project/analysis');
   };
 
+
+
+  
   // Função para deletar
   const deleteProject = (id, e) => {
     e.stopPropagation();
